@@ -5,7 +5,7 @@
 ## 先使用train.py
 单隐藏层训练模型函数
 ----------------
-训练函数：  train(x, y, n, epoch_max, lr, mod=relu)  
+训练函数：  train(x, y, n, epoch_max, lr, mod=F.relu)  
 使用方法：  
 x: 特征属性,例：   
 x = [[1,2,3],[2,3,4]]  ([x1,x2]), x1=[...], x2=[...]  
@@ -30,5 +30,23 @@ train(x, y, 10, 100, 0.01) ->
 使用函数： pred(x)  
 使用方法：  
 x: 特征属性,例：    
-x = [1,2,3]     ([x1, x2, x3]) float/int  
+x = [1,2]     ([x1, x2]) float/int  
 返回：预测值 float y  
+
+# 用法
+### 1.将NNtrain.py和NNuse.py放在当前目录下
+### 2.将数据调整成规定列表形式
+### 3.导入train和pred函数
+```python
+from NNtrain import train
+from NNuse import pred
+```
+### 4.使用train函数，例：train(x, y, 10, 100, 0.01)，会生成'mean_div.csv','NN.txt',和'net.pt'
+```python
+train(x, y, n, epoch_max, lr, mod=F.relu)  
+```
+### 5.使用pred函数，例：pred(x),得到float类型的回归值
+```python
+pred(x)  
+# 此处x是需要得出预测的值列表
+```
