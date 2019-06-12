@@ -73,6 +73,6 @@ def pred(con):
     return prediction
 
 
-# 测试
+# # 测试
 # a = [1,2]
 # print(pred(a))
