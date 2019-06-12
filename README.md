@@ -1,8 +1,8 @@
-## NNregression
+# NNregression
 普通单层神经网络回归模型函数（训练+使用 ）
 
 
-# 先使用train.py
+## 先使用train.py
 单隐藏层训练模型函数
 ----------------
 训练函数：  train(x, y, n, epoch_max, lr, mod=relu)  
@@ -24,7 +24,7 @@ mod: 激励函数，默认为 F.relu， 若替换则可使用F.tanh, F.sigmoid �
 train(x, y, 10, 100, 0.01) ->   
 返回：生成记录属性平均值和标准差的csv  和 神经网络信息 csv 和 神经网络模型参数  
   
-# 再使用use.py
+## 再使用use.py
 使用模型  
 ----------------
 使用函数： pred(x)  
