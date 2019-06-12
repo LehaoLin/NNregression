@@ -14,7 +14,7 @@ from torch.autograd import Variable
 
 # 单隐藏层训练模型函数
 # ----------------
-# 训练函数：  train(x, y, n, epoch_max, lr, mod=relu)
+# 训练函数：  train(x, y, n, epoch_max, lr, mod=F.relu)
 # 使用方法：
 # x: 特征属性,例：
 # x = [[1,2,3],[2,3,4]]  ([x1,x2]), x1=[...], x2=[...]
