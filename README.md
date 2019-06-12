@@ -41,7 +41,7 @@ x = [1,2]     ([x1, x2]) float/int
 from NNtrain import train
 from NNuse import pred
 ```
-### 4.使用train函数，例：train(x, y, 10, 100, 0.01)，会生成'mean_div.csv','NN.txt',和'net.pt'
+### 4.使用train函数，例：train(x, y, 10, 100, 0.01)，会生成`mean_div.csv`,`NN.txt`,和`net.pt`
 ```python
 train(x, y, n, epoch_max, lr, mod=F.relu)  
 ```
